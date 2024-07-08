@@ -1,0 +1,152 @@
+body {
+    background-image: url(immagini/MessNoizersAura.jpeg);
+    background-attachment: fixed;
+    /*background-repeat: repeat;*/
+    background-size: 100%;
+    margin: 0;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    background-color: #000000;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: #9c4c4c;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #96002d;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+/* cards */
+.flip-card {
+    background-color: transparent;
+    width: 500px;
+    height: 600px;
+    border: 1px solid #000000;
+    perspective: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+/* davanti la card */
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+/* dietro della card*/
+.flip-card-back {
+    background-color: rgb(116, 24, 59);
+    color: white;
+    transform: rotateY(180deg);
+    font-size: 20px;
+    text-align: center;
+}
+
+.video {
+    background-color: transparent;
+    height: 700px;
+    margin-left: auto;
+    margin-right: 80px;
+    margin-top: 50px;
+}
+
+#titolo {
+font-size: 150px;
+font-variant: small-caps;
+
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-collapse: collapse;
+    background-color: rgba(124, 91, 100, 0.4) ;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: rgba(122, 53, 71, 60%);
+}
+tr:hover {
+    background-color: rgba(122, 53, 71, 40%);
+}
+
+/*contenitore scroll */
+div.contenitore-scroll {
+    background-color: rgba(31, 31, 31, 70%);
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    color: #222222;
+  }
+  
+  div.contenitore-scroll video source {
+    padding: 10px;
+    color: #222222;
+  }
+
+  input[type=text]:focus {
+    border: 3px solid #555;
+  }
+
+  input[type=submit] {
+
+    border: none;
+    border-radius: 5px;
+ 
+    padding: 13px 28px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  label {
+    color: white;
+  }
